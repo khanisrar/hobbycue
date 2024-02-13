@@ -15,7 +15,7 @@ const Popup = () => {
             {popup && <div className="popup-container">
 
                 <div className="popup">
-                    <button onClick={removePopup}><FontAwesomeIcon className="icon-remove" icon={faXmark} /></button>
+                    <FontAwesomeIcon onClick={removePopup} className="icon-remove" icon={faXmark} />
                     <SignJoin />
                 </div>
             </div>}
