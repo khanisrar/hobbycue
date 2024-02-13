@@ -21,19 +21,18 @@
 
 }
 
-.popup button {
+.popup .icon-remove {
   position: absolute;
   top: 10px;
   right: 10px;
   background: none;
   border: none;
   cursor: pointer;
-  color: #333;
-}
-
-.popup button .icon {
+  color: #8064a2;
   font-size: 25px;
 }
+
+.popup button .icon {}
 
 nav.navbar {
   position: fixed;
@@ -1071,7 +1070,6 @@ ul.dropdown-menu {
 @media (max-width: 767px) {
   .popup-container .popup {
     width: 80%;
-    height: 75%;
 
   }
 }
@@ -1080,7 +1078,6 @@ ul.dropdown-menu {
   .popup-container .popup {
     padding: 30px;
     width: 95%;
-    height: 75%;
 
   }
 
