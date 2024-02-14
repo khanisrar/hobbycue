@@ -75,7 +75,7 @@ const SignJoin = () => {
             </div>
                 :
                 <div className='signJoin-container'>
-                    <div className='d-flex mb-4'>
+                    <div className='d-flex mb-4 sm-center'>
                         <h4 onClick={signIn}>Sign In</h4>
                         <h4 className='active'>Join In</h4>
                     </div>
