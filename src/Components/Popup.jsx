@@ -1,15 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+// import { useEffect } from "react-router-dom";
 import SignJoin from "./SignJoin";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Popup = () => {
 
-    const [popup, setPopup] = useState(true)
+    const [popup, setPopup] = useState(false);
+
+    useEffect(() => {
+        const popupTimeout = setTimeout(() => {
+            setPopup(true);
+        }, 2000);
+
+        return () => clearTimeout(popupTimeout);
+    }, []);
 
     const removePopup = () => {
-        setPopup(false)
-    }
+        setPopup(false);
+    };
+
     return (
         <>
             {popup && <div className="popup-container">

@@ -22,7 +22,7 @@ const SignJoin = () => {
     return (
         <>
             {join ? <div className='signJoin-container'>
-                <div className='d-flex mb-4'>
+                <div className='d-flex mb-4 sm-center'>
                     <h4 className='active'>Sign In</h4>
                     <h4 onClick={joinIn}>Join In</h4>
                 </div>
